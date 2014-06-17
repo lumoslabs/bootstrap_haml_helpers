@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :bootstrap-haml-helpers do
+# task :bootstrap_haml_helpers do
 #   # Task goes here
 # end
