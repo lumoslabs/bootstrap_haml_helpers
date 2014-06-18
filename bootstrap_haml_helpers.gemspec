@@ -24,4 +24,5 @@ Gem::Specification.new do |s|
   s.add_dependency "sass-rails", "~> 3.2.5"
 
   s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'rspec-rails', '~> 2.14'
 end
