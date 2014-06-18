@@ -22,4 +22,6 @@ Gem::Specification.new do |s|
   s.add_dependency "compass", "~> 0.12.0"
   s.add_dependency "haml", "~> 3.1.7"
   s.add_dependency "sass-rails", "~> 3.2.5"
+
+  s.add_development_dependency 'sqlite3'
 end
