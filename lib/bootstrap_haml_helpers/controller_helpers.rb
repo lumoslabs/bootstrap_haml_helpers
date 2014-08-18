@@ -7,6 +7,7 @@ module BootstrapHamlHelpers
     end
 
     def init_bhh_context
+      puts "hello from init context"
       BootstrapHamlHelpers::Component::Base.init_context(view_context)
       yield
     ensure
