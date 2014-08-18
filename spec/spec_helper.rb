@@ -14,4 +14,14 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = 'random'
+
+  config.with_options :type => :model do |c|
+    c.before do
+      ActionController::Base.helper BootstrapHamlHelpers::ApplicationHelper
+      controller = ActionController::Base.new
+      controller.request = ActionController::TestRequest.new
+      view_context = controller.view_context
+      BootstrapHamlHelpers::Component::Base.init_context(view_context)
+    end
+  end
 end
