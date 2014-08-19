@@ -8,7 +8,4 @@ require 'sass-rails'
 require 'bootstrap-sass'
 
 module BootstrapHamlHelpers
-  def self.hi
-    puts "hello"
-  end
 end
