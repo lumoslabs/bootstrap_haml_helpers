@@ -15,3 +15,7 @@ To integrate our gem into your application, follow these steps:
 CI
 ----
 bootstrap_haml_helpers runs on [Travis CI](https://magnum.travis-ci.com/lumoslabs/bootstrap_haml_helpers)
+
+Versioning
+----
+We follow the same version as Twitter Bootstrap (currently 2.3.2). Any patches will fall as a sub-version of the existing patch number (e.g. 2.3.2.1).
