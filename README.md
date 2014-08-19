@@ -11,3 +11,7 @@ To integrate our gem into your application, follow these steps:
 2. bundle
 3. Add the following line to your main SASS file (typically application.css.sass): `//= require bootstrap_haml_helpers`
 4. Add the following to your main JS file (typically application.js): `//= require bootstrap_haml_helpers`
+
+CI
+----
+bootstrap_haml_helpers runs on [Travis CI](https://magnum.travis-ci.com/lumoslabs/bootstrap_haml_helpers)
