@@ -14,7 +14,7 @@ To integrate our gem into your application, follow these steps:
 
 CI
 ----
-bootstrap_haml_helpers runs on public [Travis CI](https://magnum.travis-ci.com/lumoslabs/bootstrap_haml_helpers)
+bootstrap_haml_helpers runs on public [Travis CI](https://magnum.travis-ci.com/lumoslabs/bootstrap_haml_helpers).
 
 Versioning
 ----
