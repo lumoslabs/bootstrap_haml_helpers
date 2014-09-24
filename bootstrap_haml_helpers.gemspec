@@ -17,11 +17,10 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 3.2.12"
 
-  s.add_dependency "bootstrap-sass", "2.3.1.0"
-  s.add_dependency "compass-rails", "~> 1.0.3"
-  s.add_dependency "compass", "~> 0.12.0"
+  s.add_dependency "bootstrap-sass", "2.3.1.3"
   s.add_dependency "haml", "~> 3.1.7"
-  s.add_dependency "sass-rails", "~> 3.2.5"
+  s.add_dependency "sass-rails", "~> 3.2"
+  s.add_dependency "sass", '3.2.19'
 
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'rspec-rails', '~> 2.14'
