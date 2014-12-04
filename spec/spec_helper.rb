@@ -8,6 +8,9 @@
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 require "rspec/rails"
 
+# Load support files
+Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
+
 RSpec.configure do |config|
   # Run specs in random order to surface order dependencies. If you find an
   # order dependency and want to debug it, you can fix the order by providing
@@ -16,6 +19,8 @@ RSpec.configure do |config|
   config.order = 'random'
 
   config.with_options :type => :model do |c|
+    c.include BootstrapHamlHelpers::Capybara::StringMatchers
+
     c.before do
       ActionController::Base.helper BootstrapHamlHelpers::ApplicationHelper
       controller = ActionController::Base.new
