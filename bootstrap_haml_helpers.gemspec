@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 3.2.12"
 
   s.add_dependency "bootstrap-sass", "2.3.1.3"
-  s.add_dependency "haml", "~> 3.1.7"
+  s.add_dependency "haml", ">= 3.1.7"
   s.add_dependency "sass-rails", "~> 3.2"
 
   # fix the version to ensure declare error doesn't pop up for bootstrap-sass gem
