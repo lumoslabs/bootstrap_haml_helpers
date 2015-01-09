@@ -9,7 +9,7 @@ end
 
 shared_examples_for 'an element with class' do |klass|
   it "is an element with class '#{klass}'" do
-    (subject.default_css_class.include?(klass) || subject.attributes[:class].include?(klass)).should be_true
+    (subject.default_css_class.include?(klass) || subject.attributes[:class].include?(klass)).should be true
   end
 end
 

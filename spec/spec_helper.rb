@@ -18,6 +18,8 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = 'random'
 
+  config.infer_spec_type_from_file_location!
+
   config.with_options :type => :model do |c|
     c.include BootstrapHamlHelpers::Capybara::StringMatchers
 
