@@ -5,8 +5,16 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-require File.expand_path("../dummy/config/environment.rb",  __FILE__)
-require "rspec/rails"
+require 'bootstrap_haml_helpers'
+require 'capybara'
+
+# rails 3 requires requiring activesupport manually
+require 'active_support/dependencies'
+
+# load like a rails app would
+ActiveSupport::Dependencies.autoload_paths << './app/models'
+ActiveSupport::Dependencies.autoload_paths << './app/helpers'
+ActiveSupport::Dependencies.autoload_paths << './app/assets'
 
 # Load support files
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
@@ -17,18 +25,12 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = 'random'
+  config.include BootstrapHamlHelpers::Capybara::StringMatchers
 
-  config.infer_spec_type_from_file_location!
-
-  config.with_options :type => :model do |c|
-    c.include BootstrapHamlHelpers::Capybara::StringMatchers
-
-    c.before do
-      ActionController::Base.helper BootstrapHamlHelpers::ApplicationHelper
-      controller = ActionController::Base.new
-      controller.request = ActionController::TestRequest.new
-      view_context = controller.view_context
-      BootstrapHamlHelpers::Component::Base.init_context(view_context)
-    end
+  config.before do
+    ActionController::Base.helper BootstrapHamlHelpers::ApplicationHelper
+    controller = ActionController::Base.new
+    view_context = controller.view_context
+    BootstrapHamlHelpers::Component::Base.init_context(view_context)
   end
 end

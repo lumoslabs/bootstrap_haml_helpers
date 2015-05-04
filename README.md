@@ -5,6 +5,16 @@ HAML wrappers for [Twitter Bootstrap](http://getbootstrap.com/2.3.2) components.
 [![Build Status](https://travis-ci.org/lumoslabs/bootstrap_haml_helpers.svg)](https://travis-ci.org/lumoslabs/bootstrap_haml_helpers)
 [![Gem Version](https://badge.fury.io/rb/bootstrap_haml_helpers.svg)](http://badge.fury.io/rb/bootstrap_haml_helpers)
 
+How To Use The Components
+----
+```haml
+= container do
+  woah!
+
+= progress_bar do |pb|
+  = pb.bar(40)
+```
+
 Integration
 ----
 To integrate our gem into your application, follow these steps:

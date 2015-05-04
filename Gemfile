@@ -1,15 +1,17 @@
 source "https://rubygems.org"
 
+# this is for testing the gem against multiple rails versions
+rails_version = ENV["RAILS_VERSION"]
+gem "rails", rails_version
+
 # Declare your gem's dependencies in bootstrap_haml_helpers.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 gemspec
 
-# jquery-rails is used by the dummy application
-gem "jquery-rails"
-
 group :development, :test do
   gem 'capybara'
+  gem 'guard-rspec'
 end
 
 # Declare any dependencies that are still in development here instead of in
