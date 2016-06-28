@@ -5,7 +5,6 @@ module BootstrapHamlHelpers
       include InheritableTraits
       traits :tag_name, :default_css_class, :partial_path
 
-      cattr_accessor :view_context
       attr_accessor :attributes, :component_options, :content, :content_block, :content_string,
                     :controller, :output_buffer
 
@@ -31,6 +30,22 @@ module BootstrapHamlHelpers
         def teardown_context
           self.view_context = nil
         end
+
+        def view_context
+          Thread.current[:view_context]
+        end
+
+        def view_context=(view_context)
+          Thread.current[:view_context] = view_context
+        end
+      end
+
+      def view_context
+        self.class.view_context
+      end
+
+      def view_context=(view_context)
+        self.class.view_context = view_context
       end
 
       def content_type
