@@ -11,7 +11,8 @@ gemspec
 
 group :development, :test do
   gem 'capybara'
-  gem 'guard-rspec'
+  gem 'guard', '~> 1.8'
+  gem 'guard-rspec', '~> 3.1'
 end
 
 # Declare any dependencies that are still in development here instead of in
