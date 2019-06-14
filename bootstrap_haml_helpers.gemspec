@@ -17,10 +17,9 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails"
 
-  s.add_dependency "bootstrap-sass", "2.3.2.2"
+  s.add_dependency "bootstrap-sass", "~> 3.4.1"
   s.add_dependency "haml"
-  s.add_dependency "sass-rails"
-  s.add_dependency "sass"
+  s.add_dependency "sassc-rails"
 
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'rspec-rails'
