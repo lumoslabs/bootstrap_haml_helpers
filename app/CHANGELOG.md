@@ -1,3 +1,6 @@
+### 1.3.0
+- Use sassc gem instead of unmaintained sass gem.
+
 ### 1.2.1
 - Change `around_filter` to `around_action` in ControllerHelpers to fully support Rails 5 (`around_filter` is gone is 5.1)
 
