@@ -1,8 +1,8 @@
 require 'rails'
 require 'bootstrap_haml_helpers/engine'
 
-require 'sass-rails'
-require 'sass'
+require 'sassc-rails'
+require 'sassc'
 require 'bootstrap-sass'
 require 'haml'
 
