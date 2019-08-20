@@ -1,3 +1,3 @@
 module BootstrapHamlHelpers
-  VERSION = '1.3.0.betalock'
+  VERSION = '1.3.0'
 end
