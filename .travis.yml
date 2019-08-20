@@ -13,7 +13,6 @@ gemfile:
 
 before_install:
   - "find /home/travis/.rvm/rubies -wholename '*default/bundler-*.gemspec' -delete"
-  - 'gem uninstall -i /home/travis/.rvm/gems/ruby-2.4.2@global bundler -x'
   - 'rvm @global do gem install bundler -v 1.17.3'
 
 notifications:
