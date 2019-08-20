@@ -18,8 +18,8 @@ Gem::Specification.new do |s|
   s.add_dependency "rails"
 
   s.add_dependency "bootstrap-sass", "2.3.2.2"
-  s.add_dependency "haml", "~> 5.1.2"
-  s.add_dependency "sass-rails", "~> 5.0.7"
+  s.add_dependency "haml", "~> 5.1"
+  s.add_dependency "sass-rails", "~> 5.0"
   s.add_dependency "sass", "~> 3.1"
 
   s.add_development_dependency 'sqlite3'
